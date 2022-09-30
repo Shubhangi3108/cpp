@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Area
+{
+public:
+    void calculate(int l, int b)
+    {
+        cout<<"Area of Rectangle : "<<l*b<<endl;
+    }
+
+    void calculate(int a)
+    {
+        cout<<"Area of Sq: "<<a*a<< endl;
+    }
+};
+
+int main()
+{
+    Area a;
+    a.calculate(6,7);
+   a.calculate(3);
+}               
