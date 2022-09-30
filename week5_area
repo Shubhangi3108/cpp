@@ -3,15 +3,19 @@ using namespace std;
 
 class Area
 {
+private:
+    int area;
 public:
     void calculate(int l, int b)
-    {
-        cout<<"Area of Rectangle : "<<l*b<<endl;
+    { 
+        area=l*b;
+        cout<<"Area of Rectangle : "<<area<<endl;
     }
 
     void calculate(int a)
     {
-        cout<<"Area of Sq: "<<a*a<< endl;
+        area=a*a;
+        cout<<"Area of Sq: "<<area<< endl;
     }
 };
 
