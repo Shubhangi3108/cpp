@@ -2,17 +2,17 @@
 using namespace std;
 
 template <class T>
-class arithmetic {
+class math {
    private:
     T num1, num2;
 
    public:
-    arithmetic(T n1, T n2) {
+    math(T n1, T n2) {
         num1 = n1;
         num2 = n2;
     }
 
-    void displayResult() {
+    void display() {
         cout << "Numbers: " << num1 << " and " << num2 << "." << endl;
         cout << num1 << " + " << num2 << " = " << add() << endl;
         cout << num1 << " - " << num2 << " = " << subtract() << endl;
@@ -35,15 +35,15 @@ class arithmetic {
 };
 
 int main() {
-    arithmetic<int> intCalc(2, 1);
-    arithmetic<float> floatCalc(2.4, 1.2);
+    math<int> intCalc(2, 1);
+    math<float> floatCalc(2.4, 1.2);
 
     cout << "Int results:" << endl;
-    intCalc.displayResult();
+    intCalc.display();
 
     cout << endl
          << "Float results:" << endl;
-    floatCalc.displayResult();
+    floatCalc.display();
 
     return 0;
 }
